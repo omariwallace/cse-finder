@@ -1,21 +1,21 @@
 {
   "name": "cse-finder",
   "version": "1.2.0",
-  "description": "Consolidates Pod Bucci CSE queues into one view",
+  "description": "Consolidates Pod US CE queues into one view",
   "main": "src/popup.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KwanMan/cse-finder.git"
+    "url": "git+https://github.com/samuelfullerthomas/cse-finder.git"
   },
-  "author": "Tommy Kwan",
+  "author": "Sam Thomas",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/KwanMan/cse-finder/issues"
+    "url": "https://github.com/samuelfullerthomas/cse-finder/issues"
   },
-  "homepage": "https://github.com/KwanMan/cse-finder#readme",
+  "homepage": "https://github.com/samuelfullerthomas/cse-finder#readme",
   "dependencies": {
     "qubit-styles": "qubitdigital/qubit-styles",
     "slapdash": "^0.4.0"

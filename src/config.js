@@ -5,9 +5,11 @@ export const cacheTime = 5
 export const minDays = 7
 
 export const cses = [
-  { name: 'Tommy', id: '41755044194088' },
-  { name: 'Jimmy', id: '76629447954998' },
-  { name: 'Stefi', id: '45131341129610' },
-  { name: 'David', id: '19208422049726' },
-  { name: 'Alain', id: '145454860893785' }
+  { name: 'Sam T.', id: '42303118585834' },
+  { name: 'Omari', id: '12285891751873' },
+  { name: 'Gavin', id: '27044500382964' },
+  { name: 'Derek', id: '34194097984278' },
+  { name: 'Silvia', id: '94855690156214' },
+  { name: 'Josh', id: '95150761686539' },
+  { name: 'Sam C.', id: '135651286078592' }
 ]
