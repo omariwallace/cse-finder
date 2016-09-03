@@ -70,11 +70,18 @@ function enrichSections (sections, cses) {
     const newSection = {
       title: capitalise(dateToTitle(currentDate)),
       cses: cses.map(cse => {
-        return targetSection[cse] || {
-          free: true,
-          full: false,
-          tasks: []
-        }
+        if (targetSection[cse]) return targetSection[cse]
+        return cse === 'Tommy'
+          ? {
+            free: false,
+            full: true,
+            tasks: []
+          }
+          : {
+            free: true,
+            full: false,
+            tasks: []
+          }
       })
     }
     output.push(newSection)

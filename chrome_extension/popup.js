@@ -8902,7 +8902,12 @@
 	    var newSection = {
 	      title: (0, _util.capitalise)(dateToTitle(currentDate)),
 	      cses: cses.map(function (cse) {
-	        return targetSection[cse] || {
+	        if (targetSection[cse]) return targetSection[cse];
+	        return cse === 'Tommy' ? {
+	          free: false,
+	          full: true,
+	          tasks: []
+	        } : {
 	          free: true,
 	          full: false,
 	          tasks: []
