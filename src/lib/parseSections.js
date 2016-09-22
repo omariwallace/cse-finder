@@ -26,7 +26,7 @@ function matchDateSection (title) {
 }
 
 function matchOtherSections (title) {
-  const matches = /(newtasks|qa|xb)/i.exec(title)
+  const matches = /(newtasks|qa|xb|urgent)/i.exec(title)
   if (!matches || matches.length < 2) return false
   return matches[1].toLowerCase()
 }
