@@ -1,5 +1,5 @@
-@import 'qubit-styles/release/qubit-styles';
-@import 'qubit-styles/css/variables/color';
+@import '@qutics/qubit-styles/release/qubit-styles';
+@import '@qutics/qubit-styles/css/variables/color';
 
 .AuthError {
   width: 200px;
