@@ -6,11 +6,10 @@ export default function parseSections (cses) {
     Object.keys(sections).forEach(function (oldSectionName) {
       const newSectionName = matchOtherSections(oldSectionName) || matchDateSection(oldSectionName)
       if (newSectionName) {
-        const isDateSection = newSectionName !== 'qa' && newSectionName !== 'xb' && newSectionName !== 'newtasks'
         newSections[newSectionName] = {
           tasks: sections[oldSectionName],
-          full: isDateSection ? /ooo|bank|leave|full/i.test(oldSectionName) : false,
-          free: isDateSection ? !/ooo|bank|leave|full/i.test(oldSectionName) : false
+          full: !sectionAvailabile(newSectionName, oldSectionName),
+          free: sectionAvailabile(newSectionName, oldSectionName)
         }
       }
     })
@@ -29,4 +28,13 @@ function matchOtherSections (title) {
   const matches = /(newtasks|qa|xb|urgent)/i.exec(title)
   if (!matches || matches.length < 2) return false
   return matches[1].toLowerCase()
+}
+
+function sectionAvailabile (newTitle, origTitle) {
+  const isDateSection = !/(newtasks|qa|xb|urgent)/i.test(newTitle)
+  if (isDateSection) {
+    return !/ooo|bank|leave|full/i.test(origTitle)
+  } else {
+    return !/urgent/i.test(origTitle)
+  }
 }
