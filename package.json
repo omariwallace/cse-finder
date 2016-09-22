@@ -1,6 +1,5 @@
 {
   "name": "cse-finder",
-  "version": "1.2.0",
   "description": "Consolidates Pod US CE queues into one view",
   "main": "src/popup.js",
   "scripts": {
