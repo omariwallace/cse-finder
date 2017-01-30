@@ -7,14 +7,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/samuelfullerthomas/cse-finder.git"
+    "url": "git+https://github.com/omairwallace/cse-finder.git"
   },
   "author": "Omari Wallace",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/samuelfullerthomas/cse-finder/issues"
+    "url": "https://github.com/omairwallace/cse-finder/issues"
   },
-  "homepage": "https://github.com/samuelfullerthomas/cse-finder#readme",
+  "homepage": "https://github.com/omairwallace/cse-finder#readme",
   "dependencies": {
     "@qutics/qubit-styles": "^8.0.7",
     "slapdash": "^0.4.0"
