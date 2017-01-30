@@ -8469,11 +8469,13 @@
 	});
 	var endpoint = exports.endpoint = 'https://app.asana.com/api/1.0/';
 
+	var qubitWorkspaceId = exports.qubitWorkspaceId = '896401739841';
+
 	var cacheTime = exports.cacheTime = 5;
 
 	var minDays = exports.minDays = 7;
 
-	var cses = exports.cses = [{ name: 'Sam T.', id: '42303118585834' }, { name: 'Omari', id: '12285891751873' }, { name: 'Gavin', id: '27044500382964' }, { name: 'Derek', id: '34194097984278' }, { name: 'Silvia', id: '94855690156214' }, { name: 'Josh', id: '95150761686539' }, { name: 'Sam C.', id: '135651286078592' }];
+	var cses = exports.cses = [{ name: 'Sam T.', id: '42303118585829' }, { name: 'Omari', id: '12285891597188' }, { name: 'Gavin', id: '27044500382959' }, { name: 'Derek', id: '34194097198463' }, { name: 'Silvia', id: '94855690156209' }, { name: 'Josh', id: '95150761686534' }, { name: 'Sam C.', id: '135651286078587' }];
 
 /***/ },
 /* 305 */
@@ -8576,6 +8578,8 @@
 
 	var _request2 = _interopRequireDefault(_request);
 
+	var _config = __webpack_require__(304);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -8590,7 +8594,7 @@
 	      while (1) {
 	        switch (_context.prev = _context.next) {
 	          case 0:
-	            path = 'tasks?workspace=896401739841&completed_since=now&assignee=' + cse.id;
+	            path = 'tasks?workspace=' + _config.qubitWorkspaceId + '&completed_since=now&assignee=' + cse.id;
 	            _context.next = 3;
 	            return (0, _request2.default)(path, auth, 'GET');
 
