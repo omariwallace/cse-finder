@@ -1,5 +1,7 @@
 export const endpoint = 'https://app.asana.com/api/1.0/'
 
+export const qubitWorkspacdID = '896401739841'
+
 export const cacheTime = 5
 
 export const minDays = 7

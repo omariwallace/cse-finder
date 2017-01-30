@@ -1,7 +1,8 @@
 import request from './request'
+import { qubitWorkspaceId } from '../config'
 
 export default async function getCseQueue (cse, auth) {
-  const path = `tasks?workspace=896401739841&completed_since=now&assignee=${cse.id}`
+  const path = `tasks?workspace=${qubitWorkspaceId}&completed_since=now&assignee=${cse.id}`
   const { data: tasks } = await request(path, auth, 'GET')
 
   const queue = { 'newtasks': [] }
