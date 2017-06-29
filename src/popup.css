@@ -40,6 +40,7 @@
 
 .Section-innerWrapper {
   display: flex;
+  justify-content: center;
   width: 100%;
 }
 
@@ -61,7 +62,7 @@
   padding: 5px 10px;
   margin: 0 1px;
   box-sizing: border-box;
-  width: 14%;
+  width: 16%; /*14%;*/
   min-height: 30px;
 }
 

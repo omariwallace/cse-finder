@@ -11,7 +11,6 @@ export const cses = [
   { name: 'Omari', id: '12285891597188' },
   { name: 'Gavin', id: '27044500382959' },
   { name: 'Derek', id: '34194097198463' },
-  { name: 'Silvia', id: '94855690156209' },
   { name: 'Josh', id: '95150761686534' },
   { name: 'Sam C.', id: '135651286078587' }
 ]
