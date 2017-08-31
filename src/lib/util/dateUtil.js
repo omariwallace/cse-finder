@@ -29,23 +29,26 @@ export function isWorkingDay (date) {
 
 export function isBankHoliday (d) {
   const bankHolidays = [
-    [2016, 5 - 1, 2],
-    [2016, 5 - 1, 30],
-    [2016, 8 - 1, 29],
-    [2016, 12 - 1, 26],
-    [2016, 12 - 1, 27],
-    [2017, 1 - 1, 2],
-    [2017, 4 - 1, 14],
-    [2017, 4 - 1, 17],
-    [2017, 5 - 1, 1],
-    [2017, 5 - 1, 29],
-    [2017, 8 - 1, 28],
-    [2017, 12 - 1, 25],
-    [2017, 12 - 1, 26]
+    // [yyyy, mm, dd]
+    [2017, 9, 4],
+    [2017, 10, 9],
+    [2017, 11, 23],
+    [2017, 11, 24],
+    [2017, 12, 25],
+    [2018, 1, 1],
+    [2018, 1, 15],
+    [2018, 2, 19],
+    [2018, 5, 28],
+    [2018, 7, 4],
+    [2018, 9, 3],
+    [2018, 10, 8],
+    [2018, 11, 22],
+    [2018, 11, 23],
+    [2018, 12, 25]
   ]
 
   return bankHolidays.some(b => {
     const [year, month, date] = b
-    return d.getUTCDate() === date && d.getUTCMonth() === month && d.getUTCFullYear() === year
+    return d.getUTCDate() === date && d.getUTCMonth() === (month - 1) && d.getUTCFullYear() === year
   })
 }
