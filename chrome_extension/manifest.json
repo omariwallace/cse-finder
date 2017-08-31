@@ -3,7 +3,7 @@
 
   "name": "CE Finder",
   "description": "Consolidates Pod US CE queues into one view",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "icons": {
     "16": "murca16.png",
     "48": "murca48.png",
